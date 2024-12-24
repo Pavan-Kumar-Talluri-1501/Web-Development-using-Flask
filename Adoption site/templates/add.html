@@ -1,0 +1,9 @@
+{% extends "base.html" %} {% block content %}
+<div class="jumbotron">
+  <h1>Have a pupppy needs to be adopted for treatment or for taking care?</h1>
+  <p>Please fill out this form!</p>
+  <form method="POST">
+    {{form.hidden_tag()}} {{form.name.label}} {{form.name()}} {{form.submit()}}
+  </form>
+</div>
+{% endblock %}
