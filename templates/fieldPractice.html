@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Fields</title>
+  </head>
+  <body>
+    <h1>Welcome to Puppy Survey</h1>
+    <form method="POST">
+      {{ form.hidden_tag() }} {{ form.breed.label }} {{ form.breed }}
+      <br />
+      {{ form.vaccine.label }} {{ form.vaccine }}
+      <br />
+      {{ form.mood.label }} {{ form.mood }}
+      <br />
+      {{ form.food_choice.label }} {{ form.food_choice }}
+      <br />
+      {{ form.feedback }}
+      <br />
+      {{ form.submit }}
+    </form>
+  </body>
+</html>

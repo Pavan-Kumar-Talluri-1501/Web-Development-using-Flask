@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templates</title>
+</head>
+<body>
+    {% if user_login == "True" %}
+    <p>user logged in</p>
+    <h1>Hello {{ dog_name }}!</h1>
+    <h1>your name count is {{ letters_count[1:] }}</h1>
+    <ul>
+        {% for dog in dog_names %}
+        <li>{{ dog }}</li>
+        {% endfor %}
+    </ul>
+    <h1>{{ dog_name }}'s friends name is {{ dog_dict["pup_name"] }}</h1>
+    {% else %}
+    <p>please login!!!</p>
+    {% endif%}
+</body>
+</html>

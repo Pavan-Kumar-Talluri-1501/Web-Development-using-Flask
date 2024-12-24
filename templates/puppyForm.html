@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puppy Forms</title>
+  </head>
+  <body>
+    <h1>Puppy Breed Form</h1>
+    <p>
+      {% if breed %} The breed you entered is <strong>{{ breed }}</strong>.
+      Update it in the form below. {% else %} Please enter your breed: {% endif
+      %}
+    </p>
+    <form method="POST">
+      {{ form.hidden_tag() }}
+      <p>{{ form.breed.label }} {{ form.breed(size=30) }}</p>
+      <p>{{ form.submit() }}</p>
+    </form>
+  </body>
+</html>
