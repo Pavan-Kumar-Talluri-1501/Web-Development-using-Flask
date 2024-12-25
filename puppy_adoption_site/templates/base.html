@@ -33,15 +33,20 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="navbar-nav">
-        <a class="nav-item nav-link" href="{{url_for('home')}}">Home</a>
-        <a class="nav-item nav-link" href="{{url_for('add_pup')}}"
+        <a class="nav-item nav-link" href="{{url_for('index')}}">Home</a>
+        <a class="nav-item nav-link" href="{{url_for('puppies.add')}}"
           >Register Puppy</a
         >
-        <a class="nav-item nav-link" href="{{url_for('list_of_puppies')}}"
+        <a
+          class="nav-item nav-link"
+          href="{{url_for('puppies.list_of_puppies')}}"
           >List of available Puppies</a
         >
-        <a class="nav-item nav-link" href="{{url_for('delete_pup')}}"
+        <a class="nav-item nav-link" href="{{url_for('puppies.delete')}}"
           >Taken Home</a
+        >
+        <a class="nav-item nav-link" href="{{url_for('owners.add')}}"
+          >Add Owner</a
         >
       </div>
     </nav>
